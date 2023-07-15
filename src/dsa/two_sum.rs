@@ -15,5 +15,9 @@ mod tests{
     #[test]
     fn test_two_sum(){
         assert_eq!(super::two_sum(vec![2,5,3,5,6], 10), (3,1));
+        assert_eq!(super::two_sum(vec![2,7,11,15], 9), (1,0));
+
+        assert_eq!(super::two_sum(vec![3,2,4], 6), (2,1));
+        assert_eq!(super::two_sum(vec![3,3], 6), (1,0));
     }
 }
