@@ -25,8 +25,7 @@ pub fn roman_to_int(s: String) -> i32 {
             let next = c_bytes[i+1] as char;
             let n_val = get_roman_char_to_int(&next);
             if c_val < n_val {
-                num += n_val - c_val;
-                i += 1;
+                num -= c_val;
             } else {
                 num += c_val;
             }
