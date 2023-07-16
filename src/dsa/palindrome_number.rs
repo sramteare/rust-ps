@@ -1,4 +1,4 @@
-fn is_palindrome_num(mut num : i32) -> bool {
+pub fn is_palindrome_num(mut num : i32) -> bool {
     if num < 0 {return false}
     let mut digits = vec![];
     while num > 0 {

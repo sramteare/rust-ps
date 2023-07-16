@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-fn two_sum(nums: Vec<i32>, target: i32) -> (u32, u32){
+pub fn two_sum(nums: Vec<i32>, target: i32) -> (u32, u32){
     let mut cache = HashMap::new();
     for (&num, idx1) in nums.iter().zip(0..) {
         if let Some(idx2) = cache.get(&(target-num)) {

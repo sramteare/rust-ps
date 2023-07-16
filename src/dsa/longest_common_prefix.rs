@@ -12,9 +12,9 @@ pub fn longest_common_prefix(input_strs: Vec<String>) -> String {
     for i in 0..min_len{
         let ch = strs[0][i];
         
-        for j in 1..strs.len() {
-            let cur = strs[j][i];
-            println!("{} {} {} {}", ch, cur, i, j);
+        for cur_chars in strs.iter().skip(1) {
+            let cur = cur_chars[i];
+            // println!("{} {} {} {:?}", ch, cur, i, cur_chars);
             if ch != cur {
                 return String::from(&input_strs[0][..i]);
             }
