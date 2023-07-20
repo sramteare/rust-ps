@@ -6,3 +6,4 @@ pub mod valid_parentheses;
 pub mod merge_two_sorted_lists;
 pub mod remove_dup_sorted_inplace;
 pub mod remove_element;
+pub mod find_index;
